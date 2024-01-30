@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
   <meta name="keywords" content="">
   <meta name="author" content="Pablo Ribeiro">
 
-  <link rel="icon" href="assets/favicon_bg.png" type="image/png">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
 
   <title>Cyphra - Decodificar de Texto</title>
 
@@ -15,32 +16,41 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/codec-pro" rel="stylesheet">
 
   <script src="script.js" defer></script>
 
 </head>
-<body>
 
+<body>
   <header>
     <img src="assets/icons/cyphra-logo.png" alt="" class="cyphra-logo">
     <h1 class="subTitulo">criptografia e descriptografia</h1>
   </header>
 
   <main>
-    <div class="text-area" id="entradaDados">
-      <textarea type="text" placeholder="Escreva seu texto"></textarea>
+
+    <div class="btn-area">
+      <button class="btn"><span class="btn-text">Cifra de Ceasar</span></button>
+      <button class="btn"><span class="btn-text">Cifra de Vigenère</span></button>
     </div>
 
-    <button onclick="criptografarTexto()">Criptografar</button>
+    <div class="criptografia-area">
+      <div class="text-area" id="entradaDados">
+        <textarea type="text" placeholder="Escreva seu texto"></textarea>
+      </div>
 
-    <div class="text-area" id="saidaDados">
-      <textarea placeholder="Resultado" readonly></textarea>
+      <button onclick="criptografarTexto()">Criptografar</button>
+
+      <div class="text-area" id="saidaDados">
+        <textarea placeholder="Resultado" readonly></textarea>
+      </div>
     </div>
+
   </main>
 
   <footer>
     <p>Informações sobre o aplicativo | Autor: Pablo Ribeiro</p>
   </footer>
 </body>
+
 </html>

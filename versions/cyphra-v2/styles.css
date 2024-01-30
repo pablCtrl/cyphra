@@ -1,0 +1,108 @@
+/* Estilos Globais */
+
+:root {
+    --blue-royal: #1e90ff;
+    --white-color: #fff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset de Estilos Padrão */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos da Header */
+
+header {
+    background-color: var(--blue-royal);
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.header-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Estilos da Cipher Selection */
+
+.cipher-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.cipher-button {
+    background-color: var(--blue-royal);
+    color: var(--white-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cipher-button:hover {
+    background-color: #0056b3; /* Um tom mais escuro ao passar o mouse */
+}
+
+.text-cipher-button {
+    font-size: 1em;
+}
+
+/* Estilos da Encryption Area */
+
+.encryption-area {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#encrypt-button {
+    background-color: var(--blue-royal);
+    color: var(--white-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#encrypt-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos do Footer */
+
+footer {
+    background-color: var(--blue-royal);
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
