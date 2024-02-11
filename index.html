@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyphra</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon-cyphra.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <img class="logo-cyphra" src="assets/logo-cyphra.svg" alt="">
+        <div class="brand-title">
+            <p class="title">Cyphra</p>
+            <p class="subtitle">Decodificador</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="div-input-group">
+                <textarea id="input-text" placeholder="Entrada de dados"></textarea>
+
+                <div class="toggle-btn-group">
+                    <button id="btn-encrypt" class="toggle-btn active" onclick="toggleButton('btn-encrypt')">Criptografar</button>
+                    <button id="btn-decrypt" class="toggle-btn" onclick="toggleButton('btn-decrypt')">Descriptografar</button>
+                </div>
+            </div>
+            <div class="div-output-group">
+                <textarea id="output-text" placeholder="Saida de dados" readonly></textarea>
+                <button id="btn-result" onclick="getResult()">Resultado</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="description">
+            <strong>Cyphra</strong> é um projeto didático desenvolvido como parte do curso ministrado pela Alura em
+            parceria com a Oracle
+            One.
+            Constitui um desafio pessoal para aplicar e consolidar os conhecimentos adquiridos ao longo do aprendizado.
+        </p>
+
+        <p class="description">
+            github.com/pablCtrl/cyphra
+        </p>
+    </footer>
+
+</body>
+
+</html>
