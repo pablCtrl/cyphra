@@ -1,3 +1,10 @@
+// Remover o placeholder ao clicar no textarea
+const textarea = document.getElementById('input-text');
+
+textarea.addEventListener('click', function() {
+    this.removeAttribute('placeholder');
+})
+
 const inputText = document.getElementById('input-text');
 
 inputText.addEventListener('keydown', function(event) {
@@ -84,3 +91,7 @@ function decrypt(text, shift) {
     return result;
 }
 
+function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle("dark-theme");
+}

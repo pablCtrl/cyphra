@@ -32,7 +32,7 @@
     <main>
         <section>
             <div class="div-input-group">
-                <textarea id="input-text" placeholder="Entrada de dados"></textarea>
+                <textarea id="input-text" placeholder="Escreva aqui"></textarea>
 
                 <div class="toggle-btn-group">
                     <button id="btn-encrypt" class="toggle-btn active" onclick="toggleButton('btn-encrypt')">Criptografar</button>
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="div-output-group">
-                <textarea id="output-text" placeholder="Saida de dados" readonly></textarea>
+                <textarea id="output-text" readonly></textarea>
                 <button id="btn-result" onclick="getResult()">Resultado</button>
             </div>
         </section>
@@ -58,6 +58,8 @@
             github.com/pablCtrl/cyphra
         </p>
     </footer>
+
+    <button onclick="toggleTheme()">Trocar Tema</button>
 
 </body>
 

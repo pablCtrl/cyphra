@@ -1,3 +1,12 @@
+:root {
+    --light-blue: #E2E6F2;
+    --dark-blue: #4169E1;
+    --white: #fff;
+    --white-blue: #F3F5FC;
+    --black: #181818;
+    --gray: #404040;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,13 +14,14 @@
 }
 
 body {
-    background-color: #F3F5FC;
+    background-color: var(--white-blue);
     font-family: 'Nunito', sans-serif;
 }
 
 header {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    padding-left: 6%;
 
     display: flex;
     flex-direction: row;
@@ -28,7 +38,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .title {
@@ -60,30 +70,25 @@ textarea {
     border: none;
     border-radius: 20px;
     outline: none;
-    width: 40rem;
-    height: calc(40rem / 1.618);
+    width: 40vw;
+    height: calc(40vw / 1.618);
     max-width: 100%;
     background-color: #E2E6F2;
 }
 
-.div-input-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-right: 3rem;
-}
-
+.div-input-group,
 .div-output-group {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    margin-left: 3rem;
+    margin-right: 3vw;
+    margin-left: 3vw;
 }
 
 button {
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     width: 12.5rem;
     height: 3rem;
     border: none;
@@ -132,24 +137,56 @@ button {
     color: #4169E1;
     transition: background-color 0.3s ease, outline-color 0.3s ease;
 }
+
 .toggle-btn.active {
     outline-color: transparent;
     background-color: #4169E1;
     color: #fff;
 }
 
-.description{
+.description {
     color: #fff;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
+    padding-inline: 1vw;
 }
 
-
-
 footer {
-    margin-top: 5rem;
+    margin-top: 8vh;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #4169E1;
 
 }
+
+@media screen and (max-width: 1000px) {
+    header {
+        margin-top: 2vh;
+        margin-bottom: 4vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-cyphra {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 90vw;
+        height: calc(90vw / 1.618);
+        max-width: 100%
+    }
+
+    button {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 45vw;
+        height: 10vh;
+    }
+}
+
